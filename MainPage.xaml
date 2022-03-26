@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.MainPage">
+    <StackLayout Padding="20">
+        <Frame BackgroundColor="WhiteSmoke"
+               Padding="30" Margin="0,0,0,20">
+            <Label x:Name="label"
+                Text="0"
+                   FontSize="60"
+                   FontAttributes="Bold"
+                   TextColor="#1a1b21"
+                   HorizontalOptions="End"></Label>
+        </Frame>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Button Grid.Column="0" Grid.Row="0" Padding="25" Text="c" FontSize="30" TextColor="Orange" Clicked="ButtonClear_Clicked"/>
+            <Button Grid.Column="0" Grid.Row="1" Text="7" FontSize="30" Clicked="ButtonNumber_Clicked"/>
+            <Button Grid.Column="0" Grid.Row="2" Text="4" FontSize="30" Clicked="ButtonNumber_Clicked"/>
+            <Button Grid.Column="0" Grid.Row="3" Text="1" FontSize="30" Clicked="ButtonNumber_Clicked"/>
+            <Button Grid.Column="0" Grid.Row="4" Text="^2" FontSize="20" TextColor="Orange" Clicked="ButtonSquare_Clicked"/>
+
+            <Button Grid.Column="1" Grid.Row="0" ImageSource="thirtytwo.png" Clicked="ButtonX_Clicked"/>
+            <Button Grid.Column="1" Grid.Row="1" Text="8" FontSize="30" Clicked="ButtonNumber_Clicked"/>
+            <Button Grid.Column="1" Grid.Row="2" Text="5" FontSize="30" Clicked="ButtonNumber_Clicked"/>
+            <Button Grid.Column="1" Grid.Row="3" Text="2" FontSize="30" Clicked="ButtonNumber_Clicked"/>
+            <Button Grid.Column="1" Grid.Row="4" Text="0" FontSize="30" Clicked="ButtonNumber_Clicked"/>
+
+            <Button Grid.Column="2" Grid.Row="0" Text="%" FontSize="30" TextColor="Orange" Clicked="ButtonPercentage_Clicked"/>
+            <Button Grid.Column="2" Grid.Row="1" Text="9" FontSize="30" Clicked="ButtonNumber_Clicked"/>
+            <Button Grid.Column="2" Grid.Row="2" Text="6" FontSize="30" Clicked="ButtonNumber_Clicked"/>
+            <Button Grid.Column="2" Grid.Row="3" Text="3" FontSize="30" Clicked="ButtonNumber_Clicked"/>
+            <Button Grid.Column="2" Grid.Row="4" Text="," FontSize="30" Clicked="ButtonNumber_Clicked"/>
+
+            <Button Grid.Column="3" Grid.Row="0" Text="/" FontSize="30" TextColor="Orange" Clicked="ButtonOperation_Clicked"/>
+            <Button Grid.Column="3" Grid.Row="1" Text="*" FontSize="30" TextColor="Orange" Clicked="ButtonOperation_Clicked"/>
+            <Button Grid.Column="3" Grid.Row="2" Text="-" FontSize="30" TextColor="Orange" Clicked="ButtonOperation_Clicked"/>
+            <Button Grid.Column="3" Grid.Row="3" Text="+" FontSize="30" TextColor="Orange" Clicked="ButtonOperation_Clicked"/>
+            <Button Grid.Column="3" Grid.Row="4" Text="=" FontSize="30" TextColor="White" BackgroundColor="Orange" Clicked="ButtonEqual_Clicked"/>
+        </Grid>
+    </StackLayout>
+
+
+</ContentPage>
